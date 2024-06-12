@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Project</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="sidebar">
+        <img
+          class="sidebar-image"
+          src="./img/drahomir-hugo-posteby-mach-Jtv5CouP_uQ-unsplash.jpg"
+          alt="Drahomír Hugo Posteby-Mach"
+        />
+        <div class="logo-body">
+          <div class="logo">
+            <img
+              class="logo-image"
+              src="./img/odin-lined.png"
+              alt="The Odin Icon"
+            />
+          </div>
+          <h3 class="logo-text">ODIN</h3>
+        </div>
+        <footer class="footer-sidebar">
+          Photo by
+          <a
+            href="https://unsplash.com/photos/brown-wooden-dock-under-gray-clouds-during-golden-hour-Jtv5CouP_uQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank"
+            >Drahomír Hugo Posteby-Mach</a
+          >
+          on <a href="https://unsplash.com" target="_blank">Unsplash</a>
+        </footer>
+      </div>
+      <div id="form">
+        <header>
+          <div class="form-text">
+            <h3>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+            </h3>
+            <h3>Sign up <span>now</span> to get started.</h3>
+            <h3 class="form-last-text">You <span>know</span> you want to.</h3>
+          </div>
+        </header>
+        <form action="">
+          <div class="form-data">
+            <legend>Let's do this!</legend>
+            <div class="form-content">
+              <label for="first-name">FIRST NAME</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="form-content">
+              <label for="last-name">LAST NAME</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="form-content">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-content">
+              <label for="phone">PHONE NUMBER</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                autocomplete="tel"
+                required
+                pattern="\d{8}"
+                title="Please enter a valid phone number, example: 12345678"
+              />
+            </div>
+            <div class="form-content">
+              <label for="pass">PASSWORD</label>
+              <input
+                type="password"
+                name="pass"
+                id="pass"
+                autocomplete="current-password"
+                minlength="8"
+                maxlength="20"
+                required
+                pattern="\w{8,20}"
+                title="Please enter a password between 8 and 20 characters"
+              />
+            </div>
+            <div class="form-content">
+              <label for="confirm-pass">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-pass"
+                id="confirm-pass"
+                autocomplete="current-password"
+                minlength="8"
+                maxlength="20"
+                required
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="button-submit">
+            <button type="submit">Create Account</button>
+          </div>
+        </form>
+        <div class="last-text">
+          <h4>Already have an account? <a href="">Log in</a></h4>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
